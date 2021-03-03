@@ -39,4 +39,21 @@ spec:
         type: boolean
         description: Use Github Actions
         default: true
-
+      firstName:
+        type: string
+        title: First name
+        default: Chuck
+        ui:autofocus: true
+        ui:emptyValue: ''
+        ui:autocomplete: family-name
+      lastName:
+        type: string
+        title: Last name
+        ui:emptyValue: ''
+        ui:autocomplete: given-name
+      telephone:
+        type: string
+        title: Telephone
+        minLength: 10
+        ui:options:
+          inputType: tel
