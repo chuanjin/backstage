@@ -57,7 +57,5 @@ spec:
         minLength: 10
       my_radio:
         ui:widget: radio
-        type: boolean
+        type: string
         title: my_radio
-        ui:options:
-          inputType: tel
